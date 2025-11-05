@@ -73,6 +73,10 @@
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
+        ],
+        "test:precommit": [
+            "vendor/bin/pint --test",
+            "vendor/bin/pest --colors=always"
         ]
     },
     "extra": {
